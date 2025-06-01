@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bolaji Akintunde - Web Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(135deg, #a10f2c, #dc143c);
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .section {
+      padding: 4rem 0;
+    }
+    footer {
+      background-color: #343a40;
+      color: #adb5bd;
+      padding: 2rem 0;
+    }
+    footer a {
+      color: #adb5bd;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+      color: white;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #343a40;
+    }
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .preloader.hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">Bolaji Akintunde</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero d-flex flex-column justify-content-center">
+    <div class="container">
+      <h1>Bolaji Akintunde</h1>
+      <p>Web Developer | Creating Seamless Digital Experiences</p>
+      <a href="#projects" class="btn btn-lg btn-light fw-bold px-4 me-2">View My Work</a>
+      <a href="#contact" class="btn btn-lg btn-outline-light fw-bold px-4">Contact Me</a>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">About Me</h2>
+      <p class="text-center">I'm Bolaji Akintunde, a passionate and results-driven web developer dedicated to building fast, modern, and user-friendly websites. With a strong background in both front-end and back-end development, I specialize in creating seamless digital experiences that help businesses and individuals stand out online. Whether you're looking to launch a new website, redesign an existing one, or add custom features, I bring a combination of technical expertise, creative thinking, and attention to detail to every project. Let's work together to bring your digital ideas to life.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4"><h5>HTML</h5></div>
+        <div class="col-md-4 mb-4"><h5>CSS</h5></div>
+        <div class="col-md-4 mb-4"><h5>JavaScript</h5></div>
+        <div class="col-md-4 mb-4"><h5>React</h5></div>
+        <div class="col-md-4 mb-4"><h5>Node.js</h5></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-4">
+           <img src="Screenshot (4).png" class="card-img-top" alt="img">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">A responsive personal portfolio website showcasing my skills, projects, and professional experience.</p>
+              <a href="https://beejay437.github.io/beejay/" class="btn btn-warning">View Live Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Services</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Website Design</li>
+        <li class="list-group-item">Web Development</li>
+        <li class="list-group-item">Website Maintenance</li>
+        <li class="list-group-item">Custom Features Development</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nameInput" class="form-label">Name</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="Your full name" required />
+        </div>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required />
+        </div>
+        <div class="mb-3">
+          <label for="messageInput" class="form-label">Message</label>
+          <textarea class="form-control" id="messageInput" rows="4" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning w-100">Send Message</button>
+      </form>
+      <div class="mt-4 text-center">
+        <h5>Contact Number:</h5>
+        <p>+2349014328386</p>
+        <h5>Email:</h5>
+        <p><a href="mailto:bolaji.akintunde@st.tau.edu.ng">bolaji.akintunde@st.tau.edu.ng</a></p>
+      </div>
+      <div class="mt-4 text-center social-icons">
+        <a href="https://facebook.com/" class="fab fa-facebook" aria-label="Facebook"></a>
+        <a href="https://linkedin.com/" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+        <a href="https://github.com/beejay437" class="fab fa-github" aria-label="GitHub"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Bolaji Akintunde. All rights reserved.</p>
+      <p><a href="#hero">Back to top</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Preloader
+    window.addEventListener('load', () => {
+      document.querySelector('.preloader').classList.add('hidden');
+    });
+
+    // Form submission
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('nameInput').value;
+      const email = document.getElementById('emailInput').value;
+      const message = document.getElementById('messageInput').value;
+      alert('Message sent successfully!');
+    });
+  </script>
+</body>
+</html>
